@@ -15,12 +15,18 @@
             </th>
           </tr>
           <tr>
+            <td colspan="3">
+            <hr>
+          </td>
+        </tr>
+        <tr>
             <th>Kode MTK</th>
             <th>:</th>
             <td>
             <input type="text" name="kode" id="kode">
           </td>
         </tr>
+        <? form_error('kode'); ?>
         <tr>
           <th>Nama MTK</th>
           <td>:</td>
@@ -28,6 +34,7 @@
             <input type="text" name="nama" id="nama">
           </td>
         </tr>
+        <? form_error('nama'); ?>
         <tr>
           <th>SKS</th>
           <td>:</td>
