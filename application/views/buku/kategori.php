@@ -30,7 +30,7 @@
                         <td> 
                             <a href="<?= base_url('buku/ubahKategori/').$k['id'];?>" class="badge badge-info"><i class="fas fa-edit"></i> Ubah</a> 
                             <a href="<?= base_url('buku/hapusKategori/').$k['id'];?>" onclick="return confirm('Kamu yakin akan menghapus <?= $judul.' '.$k['kategori'];?> 
-?');" class="badge badge-danger"><i class="fas fa-trash"></i> Hapus</a> 
+                            ?');" class="badge badge-danger"><i class="fas fa-trash"></i> Hapus</a> 
                         </td> 
                     </tr> 
                     <?php } ?> 
@@ -58,14 +58,7 @@
             <form action="<?= base_url('buku/kategori'); ?>" method="post"> 
                 <div class="modal-body"> 
                     <div class="form-group"> 
-                        <select name="kategori" class="form-control form-control-user"> 
-                            <option value="">Pilih Kategori</option> 
-                            <?php 
-                            $k = ['Sains','Hobby','Komputer','Komunikasi','Hukum','Agama','Populer','Bahasa','Komik']; 
-                            for ($i=0;$i<9;$i++) { ?> 
-                                <option value="<?= $k[$i];?>"><?= $k[$i];?></option> 
-                            <?php } ?> 
-                        </select> 
+                        <input type="text" name="kategori" placeholder="Masukan Nama Kategori" class="form-control form-control-user">
                     </div> 
                 </div> 
  
