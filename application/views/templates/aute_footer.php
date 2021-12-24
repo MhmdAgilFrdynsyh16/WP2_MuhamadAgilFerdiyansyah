@@ -4,7 +4,6 @@
 <script src="<?= base_url('assets/');
 ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-59
 <!-- Core plugin JavaScript-->
 
 <script src="<?= base_url('assets/'); ?>vendor/jquery-

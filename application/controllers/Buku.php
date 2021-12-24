@@ -13,7 +13,7 @@ class Buku extends CI_Controller
     { 
         $data['judul'] = 'Kategori Buku'; 
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array(); 
-        $data['kategori'] = $this->ModelBuku->getKategori()->result_array(); 
+        $data['kategori'] = $this->ModelBuku->getKategori()->result_array();
  
         $this->form_validation->set_rules('kategori', 'Kategori', 'required', [ 
             'required' => 'Judul Kategori harus diisi' 
